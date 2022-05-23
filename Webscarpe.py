@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup as soup
 
 
 url="https://www.google.com/search?q=H%26m&hl=sv&tbas=0&biw=1440&bih=719&sxsrf=ALeKk001-aRBPZQSC-VAQoKSpdrFqx69QA%3A1629214258754&source=lnt&tbs=cdr%3A1%2Ccd_min%3A8%2F1%2F2021%2Ccd_max%3A8%2F15%2F2021&tbm=nws"
-print("3")
+
 
 userAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
 
@@ -52,33 +52,7 @@ for i in range(5):
     #print(contianer)
     for a in article.find_all('a', href=True):
         print (a['href'])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #Here we may attain the articles.
 
 
 
